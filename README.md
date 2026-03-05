@@ -1,6 +1,6 @@
 # Eunseo-Base Bot
 
-This is a ready-to-scale bot "frame" for a Discord card gacha bot. The code was originally used for Eunseo, a kpop gacha card game that formerly reached #10 ranking on top.gg.
+This is a bot "frame" for a Discord card gacha bot. Part of the code was originally used for Eunseo, a kpop gacha card game that formerly reached #10 global ranking on top.gg.
 
 ## Important note
 There's tons of issues, weird patterns and technical debt in this codebase. (It was built when I was still learning code, and that was way before AIs).
@@ -53,6 +53,8 @@ The `data/` directory is to be filled by yourself. You must provide the followin
 | `data/card_ids.json` | `[{ id, card_code }]` |
 | `data/rarities.json` | `[{ name, color, minWeightInverse, stars }]` |
 | `data/card_types.json` | `{ "common": "⭐", "event": "🔥", ... }` |
+
+minWeightInverse should have its sum to 1. 
 
 ## Running
 
