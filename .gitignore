@@ -1,0 +1,10 @@
+node_modules
+.env
+.vscode
+data
+built
+.yarn
+/package-lock.json
+logs
+/.vscode
+/logs

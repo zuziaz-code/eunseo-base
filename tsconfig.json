@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        "skipLibCheck": true,
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "allowJs": true,
+        "checkJs": false,
+        "noImplicitAny": false, // Disallow the 'any' type unless explicitly specified
+        "noImplicitReturns": true, // Ensure functions return a value or explicitly specify 'void'
+        "moduleResolution": "node",
+        "lib": [
+            "es2022"
+        ],
+        "module": "commonjs",
+        "target": "es2022",
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "node_modules/*",
+                "bot/types/*"
+            ]
+        },
+        "typeRoots": [
+            "node_modules/@types",
+            "bot/types"
+        ],
+        "outDir": "./built",
+        "resolveJsonModule": true
+    },
+    "include": [
+        "bot/**/*"
+    ],
+    "exclude": [
+        "**/node_modules",
+        "**/.*/"
+    ],
+    "ts-node": {
+        "swc": true
+    }
+}
